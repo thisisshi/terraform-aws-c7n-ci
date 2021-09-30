@@ -1,20 +1,7 @@
-# Safe Policy Rollouts with GitOps
-KubeCon 2021 - Governance as Code Day with Cloud Custodian hosted by Stacklet
+# C7N CI Terraform Module
+Run Cloud Custodian policies in CI and report results
 
 ![Example](example.png)
-
-## Installation
-
-To install, first generate a Github personal access token with access to the repos
-that you want to run CI on. Then, run the following commands:
-
-```bash
-cd deploy
-terraform init
-cp settings.tfvars.example settings.tfvars
-# Edit the settings.tfvars file, all vars can be found in deploy/vars.tf
-terraform apply -var-file=settings.tfvars
-```
 
 This project uses [c7n-policystream](https://cloudcustodian.io/docs/tools/c7n-policystream.html)
 to detect changes between your commit and the base branch, as defined by `base_branch`. The
