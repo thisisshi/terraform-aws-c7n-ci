@@ -1,5 +1,5 @@
 resource "aws_secretsmanager_secret" "github_token" {
-  name = "C7NGithubToken"
+  name = "C7NCIGithubToken"
 }
 
 resource "aws_secretsmanager_secret_version" "github_token" {
