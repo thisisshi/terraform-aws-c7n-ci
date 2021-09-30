@@ -33,3 +33,5 @@ accounts_yaml = ""
 # resource_threshold_percent = 1
 
 # bucket = ""
+#
+# buildspec = "buildspec.yaml"

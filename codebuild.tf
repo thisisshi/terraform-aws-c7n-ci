@@ -82,7 +82,7 @@ resource "aws_codebuild_project" "policy_ci" {
     type            = "GITHUB"
     location        = var.repository_url
     git_clone_depth = 0
-    buildspec       = "deploy/buildspec.yaml"
+    buildspec       = var.buildspec
   }
 }
 

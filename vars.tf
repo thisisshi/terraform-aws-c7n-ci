@@ -86,6 +86,12 @@ variable "bucket" {
 }
 
 variable "accounts_yaml" {
-  type = string
+  type        = string
   description = "Absolute path to c7n-org accounts.yaml"
+}
+
+variable "buildspec" {
+  type        = string
+  description = "Location of buildspec.yaml in repository"
+  default     = "buildspec.yaml"
 }
